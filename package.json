@@ -11,5 +11,14 @@
   "dependencies": {
     "chalk": "^2.3.0",
     "figlet": "^1.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackrack/NPM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hackrack/NPM/issues"
+  },
+  "homepage": "https://github.com/hackrack/NPM#readme"
 }

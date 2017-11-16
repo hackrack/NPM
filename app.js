@@ -3,17 +3,14 @@ const chalk = require("chalk");
 // console.log(chalk.red("Hello World!!!"));
 
 const textPainter = (string, color) => chalk[color](string);
-// console.log(textPainter("#hackrack", "blue"));
+
+// console.log(textPainter("#hackrack", "yellow"));
 
 const evensBlueOddsYellow = (sentence) => {
   var colored = "";
   sentence = sentence.split("");
   sentence.forEach(function(char, i) {
-    if (i % 2 === 0) {
-      colored += chalk.blue(char);
-    } else {
-      colored += chalk.yellow(char);
-    }
+    i % 2 === 0? colored += chalk.blue(char) :colored += chalk.yellow(char);
   })
   return colored;
 }
@@ -39,4 +36,4 @@ const boldFirstUnderlineLast = (string) => {
 const commandLineChalk = (string, color, bgColor, bold) => {
   return chalk[bgColor][color].bold(string);
 }
-console.log(commandLineChalk(process.argv[2], process.argv[3], process.argv[4], process.argv[5]));
+// console.log(commandLineChalk(process.argv[2], process.argv[3], process.argv[4], process.argv[5]));
